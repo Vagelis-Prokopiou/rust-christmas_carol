@@ -1,5 +1,5 @@
 fn main() {
-    let presents_per_day: Vec<(&str, &str)> = vec![
+    let present_per_day: Vec<(&str, &str)> = vec![
         ("first", "A Partridge in a Pear Tree"),
         ("second", "Two Turtle Doves"),
         ("third", "Three French Hens"),
@@ -15,7 +15,7 @@ fn main() {
     ];
     let mut result: String = String::new();
 
-    for (index, pair) in presents_per_day.iter().enumerate() {
+    for (index, pair) in present_per_day.iter().enumerate() {
         if index == 1 {
             result = pair.1.to_string() + "\nand " + &result;
         } else {
